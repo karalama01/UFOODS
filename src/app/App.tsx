@@ -220,7 +220,7 @@ export default function App() {
   return (
     <div className="min-h-screen">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+      <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm border-b border-border bg-amber-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center gap-2">
@@ -409,7 +409,7 @@ export default function App() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 px-4 bg-primary text-primary-foreground">
+      <section id="contact" className="pt-20 pb-10 px-4 bg-primary text-primary-foreground">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl mb-6">{t.contact.title}</h2>
           <p className="text-xl mb-12 opacity-90">
@@ -439,10 +439,6 @@ export default function App() {
               <p className="opacity-90">{t.contact.locationValue}</p>
             </div>
           </div>
-
-          <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white">
-            {t.contact.cta}
-          </Button>
         </div>
       </section>
 
