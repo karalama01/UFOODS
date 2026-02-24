@@ -25,6 +25,7 @@ export default defineConfig({
         products: path.resolve(__dirname, 'products.html'),
         contact: path.resolve(__dirname, 'contact.html'),
         yasou: path.resolve(__dirname, 'yasou.html'),
+        missionVision: path.resolve(__dirname, 'mission-vision.html'),
       },
     },
   },
