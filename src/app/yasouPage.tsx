@@ -1,8 +1,8 @@
 import HeaderSection from "@/app/components/shared/header";
 import Footer from "@/app/components/shared/Footer";
 import { LanguageProvider, useLanguage } from "@/app/contexts/LanguageContext";
-import kavonoz from "@/app/components/img/kavonoz.png";
-import vakum from "@/app/components/img/vakum.png";
+import kavonoz from "@/app/components/img/kavanozlar.png";
+import vakum from "@/app/components/img/vakumlar.png";
 import yasou_logo from "@/app/components/img/yasou_logo.png";
 import vineyard_img from "@/app/components/img/vineyard.jpeg";
 import WhatsAppButton from "./components/shared/WhatsAppButton";
@@ -77,14 +77,14 @@ function YasouPageContent() {
                       className="h-full w-full object-cover"
                     />
                   </div>
-                  <div className="flex flex-1 flex-col items-center p-6 bg-gradient-to-b from-white to-[#f7f2e8] text-center">
+                  <div className="flex flex-1 flex-col items-center py-6 bg-gradient-to-b from-white to-[#f7f2e8] text-center">
                     <div className="w-full text-center">
-                      <h3 className="font-serif text-2xl md:text-[32px] leading-none text-[#c7aa70]">{product.name}</h3>
+                      <h3 className="font-serif text-2xl md:text-[32px] leading-none text-[#c7aa70] mx-3">{product.name}</h3>
                       <p className="mt-2 text-base md:text-[16px] leading-[1.55] text-[#535046]">{product.type}</p>
                     </div>
-                    <div className="w-full text-sm pt-3 mt-auto uppercase tracking-[0.3em] text-[#535046] text-center">
+                    <div className="w-full text-sm pt-3 mt-auto uppercase tracking-[0.3em] text-[#535046] text-center px-3">
                       <p>{product.bt1}</p>
-                      <p>{product.bt2}</p>
+                      <p dangerouslySetInnerHTML={{ __html: product.bt2 }} />
                     </div>
                   </div>
                 </div>

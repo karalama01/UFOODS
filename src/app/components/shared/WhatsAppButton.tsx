@@ -5,7 +5,7 @@ interface WhatsAppButtonProps {
   phoneNumber?: string;
 }
 
-export default function WhatsAppButton({ phoneNumber = "905322659626" }: WhatsAppButtonProps) {
+export default function WhatsAppButton({ phoneNumber = "+491736517135" }: WhatsAppButtonProps) {
   const { t } = useLanguage();
 
   return (

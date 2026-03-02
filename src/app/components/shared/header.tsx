@@ -55,13 +55,13 @@ export default function HeaderSection() {
                                 </DropdownMenuItem>
                                 <DropdownMenuSeparator/>
                                 <DropdownMenuItem onClick={() => setLanguage('en')}>
-                                    English {language === "en" ? "•" : ""}
+                                    🇬🇧 English {language === "en" ? "•" : ""}
                                 </DropdownMenuItem>
                                 <DropdownMenuItem onClick={() => setLanguage('de')}>
-                                    Deutsch {language === "de" ? "•" : ""}
+                                    🇩🇪 Deutsch {language === "de" ? "•" : ""}
                                 </DropdownMenuItem>
                                 <DropdownMenuItem onClick={() => setLanguage('tr')}>
-                                    Türkçe {language === "tr" ? "•" : ""}
+                                    🇹🇷 Türkçe {language === "tr" ? "•" : ""}
                                 </DropdownMenuItem>
                             </DropdownMenuContent>
                         </DropdownMenu>
@@ -70,9 +70,9 @@ export default function HeaderSection() {
                             <Globe className="w-6 h-6"/>
                             </DropdownMenuTrigger>
                             <DropdownMenuContent className="w-56">
-                                <DropdownMenuItem onClick={() => setLanguage('en')}>English</DropdownMenuItem>
-                                <DropdownMenuItem onClick={() => setLanguage('de')}>Deutsch</DropdownMenuItem>
-                                <DropdownMenuItem onClick={() => setLanguage('tr')}>Türkçe</DropdownMenuItem>
+                                <DropdownMenuItem onClick={() => setLanguage('en')}>🇬🇧 English {language === "en" ? "•" : ""}</DropdownMenuItem>
+                                <DropdownMenuItem onClick={() => setLanguage('de')}>🇩🇪 Deutsch {language === "de" ? "•" : ""}</DropdownMenuItem>
+                                <DropdownMenuItem onClick={() => setLanguage('tr')}>🇹🇷 Türkçe {language === "tr" ? "•" : ""}</DropdownMenuItem>
                             </DropdownMenuContent>
                         </DropdownMenu>
                     </div>
