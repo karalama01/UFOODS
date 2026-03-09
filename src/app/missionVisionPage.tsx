@@ -12,7 +12,7 @@ function MissionVisionPageContent() {
       <HeaderSection/>
 
       <main
-        className="flex-grow"
+        className="flex-grow flex flex-col"
         style={{
           background:
             "radial-gradient(circle at 7% 48%, rgba(166,153,123,0.16) 0, rgba(166,153,123,0) 18%), radial-gradient(circle at 94% 42%, rgba(166,153,123,0.16) 0, rgba(166,153,123,0) 18%), linear-gradient(#f1eee8, #ece9e2)",
@@ -26,7 +26,7 @@ function MissionVisionPageContent() {
           />
         </div>
 
-        <div style={{backgroundImage: `url(${bg_img})`}} className="bg-cover">
+        <div style={{backgroundImage: `url(${bg_img})`}} className="bg-cover bg-center bg-no-repeat flex-grow">
           <section
             className="relative max-w-5xl mx-auto w-full px-4 md:px-6 py-8 md:py-12 bg-cover bg-center bg-no-repeat"
           >
