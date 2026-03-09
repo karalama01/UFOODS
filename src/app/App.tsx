@@ -244,7 +244,7 @@ function AppContent() {
 
           <div className="mt-12">
             <a 
-              href="/UFOODS/contact.html"
+              href="/contact.html"
               className="inline-block bg-primary-foreground hover:border-4 hover:border-primary/40 text-primary px-8 hover:px-16 py-4 rounded-full text-xl font-semibold hover:bg-opacity-90 transition-all"
             >
               {t.nav.contact}
