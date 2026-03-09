@@ -11,6 +11,7 @@ import {useLanguage} from "@/app/contexts/LanguageContext";
 
 export default function HeaderSection() {
     const {language, setLanguage, t} = useLanguage();
+    const navItemClass = "inline-flex items-center rounded-md px-3 py-1.5 text-foreground transition-all duration-200 hover:bg-amber-100 hover:text-primary hover:shadow-sm hover:-translate-y-0.5";
 
     return (
         <nav style={{borderColor: "#8c7e60"}}
@@ -25,15 +26,15 @@ export default function HeaderSection() {
                     </div>
                     <div className="absolute left-1/2 transform -translate-x-1/2 hidden md:flex gap-8">
                         <a href="/UFOODS/index.html"
-                           className="text-foreground hover:text-primary transition-colors">{t.nav.home}</a>
+                           className={navItemClass}>{t.nav.home}</a>
                         <a href="/UFOODS/yasou.html"
-                           className="text-foreground hover:text-primary transition-colors">{t.nav.yasou}</a>
+                           className={navItemClass}>{t.nav.yasou}</a>
                         {/*<a href="/UFOODS/products.html"*/}
                         {/*   className="text-foreground hover:text-primary transition-colors">{t.nav.products}</a>*/}
                         <a href="/UFOODS/mission-vision.html"
-                           className="text-foreground hover:text-primary transition-colors">{t.nav.values}</a>
+                           className={navItemClass}>{t.nav.values}</a>
                         <a href="/UFOODS/contact.html"
-                           className="text-foreground hover:text-primary transition-colors">{t.nav.contact}</a>
+                           className={navItemClass}>{t.nav.contact}</a>
                     </div>
                     <div className="flex items-center gap-2">
                         <DropdownMenu>
@@ -42,16 +43,16 @@ export default function HeaderSection() {
                             </DropdownMenuTrigger>
                             <DropdownMenuContent align="end" className="w-56">
                                 <DropdownMenuItem asChild>
-                                    <a href="/UFOODS/index.html">{t.nav.home}</a>
+                                    <a href="/UFOODS/index.html" className={navItemClass}>{t.nav.home}</a>
                                 </DropdownMenuItem>
                                 <DropdownMenuItem asChild>
-                                    <a href="/UFOODS/yasou.html">{t.nav.yasou}</a>
+                                    <a href="/UFOODS/yasou.html" className={navItemClass}>{t.nav.yasou}</a>
                                 </DropdownMenuItem>
                                 <DropdownMenuItem asChild>
-                                    <a href="/UFOODS/mission-vision.html">{t.nav.values}</a>
+                                    <a href="/UFOODS/mission-vision.html" className={navItemClass}>{t.nav.values}</a>
                                 </DropdownMenuItem>
                                 <DropdownMenuItem asChild>
-                                    <a href="/UFOODS/contact.html">{t.nav.contact}</a>
+                                    <a href="/UFOODS/contact.html" className={navItemClass}>{t.nav.contact}</a>
                                 </DropdownMenuItem>
                                 <DropdownMenuSeparator/>
                                 <DropdownMenuItem onClick={() => setLanguage('en')}>

@@ -21,13 +21,13 @@ function YasouPageContent() {
       alt: t.yasou.items.grapeLeavesJar.imageAlt,
     },
     {
-      key: "grapeLeavesVaccum",
-      name: t.yasou.items.grapeLeavesVaccum.name,
-      bt1: t.yasou.items.grapeLeavesVaccum.bt1,
-      bt2: t.yasou.items.grapeLeavesVaccum.bt2,
-      type: t.yasou.items.grapeLeavesVaccum.type,
+      key: "grapeLeavesVacuum",
+      name: t.yasou.items.grapeLeavesVacuum.name,
+      bt1: t.yasou.items.grapeLeavesVacuum.bt1,
+      bt2: t.yasou.items.grapeLeavesVacuum.bt2,
+      type: t.yasou.items.grapeLeavesVacuum.type,
       image: vakum,
-      alt: t.yasou.items.grapeLeavesVaccum.imageAlt,
+      alt: t.yasou.items.grapeLeavesVacuum.imageAlt,
     },
   ];
 
@@ -45,7 +45,7 @@ function YasouPageContent() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center">
               <div className="inline-flex items-center">
-                <img src={yasou_logo} alt="Yasou Logo" className="h-24 w-auto"/>
+                <img src={yasou_logo} alt="Yasou Logo" className="h-36 w-auto"/>
               </div>
               <h1 className="mt-4 mx-auto font-serif text-4xl md:text-[52px] leading-none text-[#c7aa70]">
                 {t.yasou.introTitle}
@@ -57,9 +57,9 @@ function YasouPageContent() {
           </div>
         </section>
 
-        <section className="w-full px-4 pb-20 mt-10 flex flex-col items-center justify-center text-center">
+        <section className="w-full px-4 pb-20 mt-3 flex flex-col items-center justify-center text-center">
           <div className="max-w-6xl mx-auto w-full">
-            <div className="flex flex-col items-center gap-3 mb-10">
+            <div className="flex flex-col items-center gap-3 mb-5">
               <h2 className="font-serif text-4xl md:text-[52px] leading-none text-[#c7aa70]">{t.yasou.productsTitle}</h2>
               <p className="text-base md:text-[18px] leading-[1.55] text-[#535046] max-w-2xl mx-auto">{t.yasou.productsSubtitle}</p>
             </div>
@@ -82,7 +82,7 @@ function YasouPageContent() {
                       <h3 className="font-serif text-2xl md:text-[32px] leading-none text-[#c7aa70] mx-3">{product.name}</h3>
                       <p className="mt-2 text-base md:text-[16px] leading-[1.55] text-[#535046]">{product.type}</p>
                     </div>
-                    <div className="w-full text-sm pt-3 mt-auto uppercase tracking-[0.3em] text-[#535046] text-center px-3">
+                    <div className="w-full text-sm pt-3 mt-auto tracking-[0.3em] text-[#535046] text-center px-3">
                       <p>{product.bt1}</p>
                       <p dangerouslySetInnerHTML={{ __html: product.bt2 }} />
                     </div>
