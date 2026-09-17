@@ -126,7 +126,7 @@ export const translations = {
             officeLabel: "Office Address",
             warehouseLabel: "Warehouse Address",
             officeAddress: "Niehler Str.446 50735 Köln Niehl Germany",
-            warehouseAddress: "Schlavenhorst 86-90, 46395 Bocholt, Germany",
+            warehouseAddress: "Industriegebiet Süd B 40, 63755 Alzenau, Germany",
             cta: "Request a Catalog",
             form: {
                 name: "Full Name",
@@ -273,7 +273,7 @@ export const translations = {
             officeLabel: "Büroadresse",
             warehouseLabel: "Lageradresse",
             officeAddress: "Niehler Str.446 50735 Köln Niehl Deutschland",
-            warehouseAddress: "Schlavenhorst 86-90, 46395 Bocholt, Deutschland",
+            warehouseAddress: "Industriegebiet Süd B 40, 63755 Alzenau, Deutschland",
             cta: "Katalog anfordern",
             form: {
                 name: "Vollständiger Name",
@@ -420,7 +420,7 @@ export const translations = {
             officeLabel: "Ofis Adresi",
             warehouseLabel: "Depo Adresi",
             officeAddress: "Niehler Str.446 50735 Köln Niehl Almanya",
-            warehouseAddress: "Schlavenhorst 86-90, 46395 Bocholt, Almanya",
+            warehouseAddress: "Industriegebiet Süd B 40, 63755 Alzenau, Almanya",
             cta: "Katalog Talep Edin",
             form: {
                 name: "Ad Soyad",
